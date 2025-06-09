@@ -218,46 +218,49 @@
 
         <section id="lead-capture" class="lead-capture-section">
             <div class="container">
-                <div class="form-container" data-aos="fade-up">
-                    <div class="form-header">
+                <div class="lead-capture-grid">
+                    <div class="lead-info" data-aos="fade-right">
                         <h3>Preencha seus dados para agendar uma demonstração</h3>
-                        <p>Nossa equipe entrará em contato para apresentar o GesCond, sem compromisso.</p>
+                        <p>Veja na prática como o GesCond pode simplificar a rotina, reduzir custos e melhorar a comunicação no seu condomínio. É rápido e sem compromisso!</p>
+                        <img src="images/gescond-image.png" alt="Painel do sistema GesCond" class="system-image">
                     </div>
-                    
-                    <form id="lead-form" action="#" method="POST">
-                        <div class="form-group">
-                            <label for="lead-name">Nome completo*</label>
-                            <input type="text" id="lead-name" name="name" placeholder="Digite seu nome" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="lead-email">Seu melhor e-mail*</label>
-                            <input type="email" id="lead-email" name="email" placeholder="exemplo@email.com" required>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="lead-whatsapp">WhatsApp*</label>
-                            <input type="tel" id="lead-whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
-                        </div>
-                        
-                        <fieldset class="form-group">
-                            <legend>Como o GesCond pode te ajudar hoje?*</legend>
-                            <div class="radio-option">
-                                <input type="radio" id="reason-demo" name="reason" value="demonstracao" checked>
-                                <label for="reason-demo">Quero conhecer o sistema (preço, informações ou demonstração)</label>
+                    <div class="form-container" data-aos="fade-left">
+                        <form id="lead-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="lead-name">Nome completo*</label>
+                                <input type="text" id="lead-name" name="name" placeholder="Digite seu nome" required>
                             </div>
-                            <div class="radio-option">
-                                <input type="radio" id="reason-support" name="reason" value="suporte">
-                                <label for="reason-support">Sou cliente e preciso de suporte</label>
+                            
+                            <div class="form-group">
+                                <label for="lead-email">Seu melhor e-mail*</label>
+                                <input type="email" id="lead-email" name="email" placeholder="exemplo@email.com" required>
                             </div>
-                            <div class="radio-option">
-                                <input type="radio" id="reason-other" name="reason" value="outro">
-                                <label for="reason-other">Outro motivo</label>
-                            </div>
-                        </fieldset>
 
-                        <button type="submit" class="btn btn-primary btn-full-width">Quero uma demonstração</button>
-                    </form>
+                            <div class="form-group">
+                                <label for="lead-whatsapp">WhatsApp*</label>
+                                <input type="tel" id="lead-whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+                            </div>
+                            
+                            <fieldset class="form-group">
+                                <legend>Principal interesse:*</legend>
+                                <div class="radio-option">
+                                    <input type="radio" id="reason-demo" name="reason" value="demonstracao" checked>
+                                    <label for="reason-demo">Quero conhecer o sistema (Demonstração)</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="reason-support" name="reason" value="suporte">
+                                    <label for="reason-support">Sou cliente e preciso de suporte</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="reason-other" name="reason" value="outro">
+                                    <label for="reason-other">Outro motivo</label>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit" class="btn btn-primary btn-full-width">Quero uma demonstração</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

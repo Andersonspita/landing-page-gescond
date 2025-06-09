@@ -111,7 +111,7 @@ section {
 }
 
 .logo img {
-    height: 80px;
+    height: 120px;
 }
 
 .main-nav ul {
@@ -417,7 +417,7 @@ section {
     text-align: center;
 }
 .footer-logo {
-    height: 80px;
+    height: 120px;
     margin-bottom: 15px;
     opacity: 0.7;
 }
@@ -673,34 +673,51 @@ section {
     pointer-events: none; 
 }
 
-/* --- SEÇÃO DE CAPTURA DE LEADS --- */
+/* --- SEÇÃO DE CAPTURA DE LEADS (Layout de 2 Colunas) --- */
 .lead-capture-section {
-    background-color: var(--light-gray-color);
-    padding: 80px 0;
+    padding: 100px 0;
+    background-color: var(--white-color); /* Fundo branco para a seção */
 }
 
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: var(--white-color);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: var(--box-shadow);
+.lead-capture-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de larguras iguais */
+    align-items: center; /* Alinha o conteúdo das duas colunas verticalmente */
+    gap: 80px; /* Espaço entre as colunas */
 }
 
-.form-header {
-    text-align: center;
+/* Estilos da Coluna da Esquerda (Info) */
+.lead-info h3 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.lead-info p {
+    font-size: 1.1rem;
+    color: #555;
     margin-bottom: 30px;
 }
 
-.form-header h3 {
-    font-size: 1.8rem;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+.system-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.form-header p {
-    color: #777;
+/* Estilos da Coluna da Direita (Formulário) */
+.form-container {
+    background-color: var(--white-color);
+    padding: 40px;
+    border-radius: 15px;
+    /* Usamos borda em vez de sombra para um look mais clean, como na referência */
+    border: 1px solid #e0e0e0; 
+}
+
+/* Remove o cabeçalho de dentro do formulário, pois ele já está na coluna da esquerda */
+.form-header {
+    display: none;
 }
 
 #lead-form .form-group {
@@ -726,9 +743,7 @@ section {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#lead-form input[type="text"]:focus,
-#lead-form input[type="email"]:focus,
-#lead-form input[type="tel"]:focus {
+#lead-form input:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
@@ -744,10 +759,13 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #f8f9fa;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+.radio-option:hover {
+    background-color: #f8f9fa;
 }
 
 .radio-option input[type="radio"] {
@@ -768,4 +786,18 @@ section {
     padding-bottom: 15px;
     font-size: 1.1rem;
     margin-top: 10px;
+}
+
+/* Ajustes para Responsividade */
+@media (max-width: 992px) {
+    .lead-capture-grid {
+        /* Transforma em uma única coluna em telas menores */
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .lead-info {
+        /* Centraliza o texto quando estiver em coluna única */
+        text-align: center;
+    }
 }
