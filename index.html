@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GesCond - O Sistema Completo para a Gestão do seu Condomínio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/gescond-logo.png" alt="GesCond Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato" class="btn btn-outline">Solicitar Demonstração</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-icon" aria-label="Abrir menu">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up">Modernize a gestão do seu condomínio. Simples, eficiente e para todos.</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">O GesCond centraliza a comunicação, finanças e reservas em um só lugar. Menos burocracia para o síndico, mais transparência para os moradores.</p>
+                    <a href="#planos" class="btn btn-primary btn-large" data-aos="fade-up" data-aos-delay="400">Conheça nossos planos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="features-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Tudo o que você precisa em uma única plataforma</h2>
+                    <p>Gerencie todos os aspectos do seu condomínio com ferramentas inteligentes e fáceis de usar.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up">
+                        <span class="material-icons">payments</span>
+                        <h3>Controle Financeiro Total</h3>
+                        <p>Gestão de taxas, controle de inadimplência  e relatórios financeiros completos  para uma administração transparente.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="material-icons">chat</span>
+                        <h3>Comunicação Integrada</h3>
+                        <p>Envie comunicados para todos, para blocos ou moradores específicos  e centralize as conversas importantes.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="material-icons">event_available</span>
+                        <h3>Reservas de Áreas Comuns</h3>
+                        <p>Agenda online para salão de festas, churrasqueiras e outros espaços. Chega de conflitos e confusão.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <span class="material-icons">build</span>
+                        <h3>Solicitações de Manutenção</h3>
+                        <p>Moradores abrem chamados de manutenção  e você acompanha o status e o responsável pela execução em tempo real.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <span class="material-icons">folder_shared</span>
+                        <h3>Gestão de Documentos</h3>
+                        <p>Armazene e compartilhe atas de assembleia, contratos e normas internas com segurança e controle de permissão.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <span class="material-icons">how_to_vote</span>
+                        <h3>Assembleias e Votações</h3>
+                        <p>Agende reuniões, disponibilize a pauta e realize votações eletrônicas, aumentando a participação de todos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          </section>
+
+        <section id="demonstracao" class="demo-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Veja o GesCond em Ação</h2>
+                    <p>Descubra em menos de 2 minutos como nosso sistema pode simplificar a sua gestão.</p>
+                </div>
+                <div class="video-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-wrapper">
+                        <div id="youtube-player"></div>
+                        
+                        <img src="images/video-thumbnail.jpg" alt="Demonstração do Sistema GesCond" class="video-poster" id="video-poster">
+                        
+                        <button class="play-button" id="play-button" aria-label="Play Video">
+                            <span class="material-icons">play_arrow</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="benefits-section">
+            <div class="container">
+                <div class="benefit-block" data-aos="fade-right">
+                    <h3>Para Síndicos e Administradoras</h3>
+                    <ul>
+                        <li><span class="material-icons">check_circle</span> Otimize seu tempo automatizando tarefas repetitivas.</li>
+                        <li><span class="material-icons">check_circle</span> Reduza a inadimplência com um sistema de cobrança eficiente.</li>
+                        <li><span class="material-icons">check_circle</span> Tenha acesso a relatórios detalhados para tomadas de decisão mais inteligentes.</li>
+                        <li><span class="material-icons">check_circle</span> Centralize toda a documentação e histórico do condomínio em um local seguro.</li>
+                    </ul>
+                </div>
+                <div class="benefit-block" data-aos="fade-left">
+                    <h3>Para os Moradores</h3>
+                    <ul>
+                        <li><span class="material-icons">check_circle</span> Reserve áreas comuns com poucos cliques, a qualquer hora.</li>
+                        <li><span class="material-icons">check_circle</span> Receba comunicados importantes diretamente no seu celular ou e-mail.</li>
+                        <li><span class="material-icons">check_circle</span> Abra solicitações de manutenção e acompanhe o andamento.</li>
+                        <li><span class="material-icons">check_circle</span> Acesse documentos e atas de forma rápida e transparente.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonials-section">
+            <div class="container">
+                 <div class="section-header" data-aos="fade-up">
+                    <h2>Quem usa, aprova!</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <p>"Desde que implementamos o GesCond, a comunicação com os moradores melhorou 100%. O controle da inadimplência também ficou muito mais fácil e eficaz."</p>
+                        <div class="testimonial-author">
+                            <img src="images/avatar1.jpg" alt="Avatar de um síndico">
+                            <div>
+                                <strong>Carlos Magalhães</strong>
+                                <span>Síndico do Condomínio Residencial Flores</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <p>"A funcionalidade de reserva de áreas comuns é fantástica. Acabou a dor de cabeça com agendamentos em papel. Recomendo o GesCond a todos os síndicos."</p>
+                         <div class="testimonial-author">
+                            <img src="images/avatar2.jpg" alt="Avatar de uma síndica">
+                             <div>
+                                <strong>Juliana Pereira</strong>
+                                <span>Síndica Profissional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="pricing-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Escolha o plano ideal para o seu condomínio</h2>
+                    <p>Comece a transformar sua gestão hoje mesmo. Sem taxas de instalação.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-aos="fade-up">
+                        <h3>Plano Essencial</h3>
+                        <p class="price"><span>R$</span> 199 <span>/mês</span></p>
+                        <p class="units">Para condomínios de até 50 unidades</p>
+                        <ul>
+                            <li><span class="material-icons">check</span> Comunicação e Documentos</li>
+                            <li><span class="material-icons">check</span> Reserva de Áreas Comuns</li>
+                            <li><span class="material-icons">check</span> Solicitações de Manutenção</li>
+                            <li><span class="material-icons">check</span> Suporte por E-mail</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary">Quero este plano</a>
+                    </div>
+                    <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                        <span class="popular-badge">Mais Popular</span>
+                        <h3>Plano Completo</h3>
+                        <p class="price"><span>R$</span> 349 <span>/mês</span></p>
+                        <p class="units">Para condomínios de até 150 unidades</p>
+                        <ul>
+                            <li><span class="material-icons">check</span> <b>Todos os recursos do Essencial</b></li>
+                            <li><span class="material-icons">check</span> Controle Financeiro e Cobrança</li>
+                            <li><span class="material-icons">check</span> Controle de Inadimplência</li>
+                            <li><span class="material-icons">check</span> Assembleia com Votação Online</li>
+                            <li><span class="material-icons">check</span> Suporte Prioritário (WhatsApp)</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-primary">Quero este plano</a>
+                    </div>
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
+                         <h3>Plano Personalizado</h3>
+                        <p class="price"><span>Sob</span> Consulta</p>
+                        <p class="units">Para administradoras e grandes condomínios</p>
+                        <ul>
+                            <li><span class="material-icons">check</span> <b>Todos os recursos do Completo</b></li>
+                            <li><span class="material-icons">check</span> Múltiplos Condomínios</li>
+                            <li><span class="material-icons">check</span> Relatórios Personalizados</li>
+                            <li><span class="material-icons">check</span> Gerente de Contas Dedicado</li>
+                            <li><span class="material-icons">check</span> Integrações via API</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         </section>
+
+        <section id="lead-capture" class="lead-capture-section">
+            <div class="container">
+                <div class="form-container" data-aos="fade-up">
+                    <div class="form-header">
+                        <h3>Preencha seus dados para agendar uma demonstração</h3>
+                        <p>Nossa equipe entrará em contato para apresentar o GesCond, sem compromisso.</p>
+                    </div>
+                    
+                    <form id="lead-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="lead-name">Nome completo*</label>
+                            <input type="text" id="lead-name" name="name" placeholder="Digite seu nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lead-email">Seu melhor e-mail*</label>
+                            <input type="email" id="lead-email" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lead-whatsapp">WhatsApp*</label>
+                            <input type="tel" id="lead-whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+                        
+                        <fieldset class="form-group">
+                            <legend>Como o GesCond pode te ajudar hoje?*</legend>
+                            <div class="radio-option">
+                                <input type="radio" id="reason-demo" name="reason" value="demonstracao" checked>
+                                <label for="reason-demo">Quero conhecer o sistema (preço, informações ou demonstração)</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="reason-support" name="reason" value="suporte">
+                                <label for="reason-support">Sou cliente e preciso de suporte</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="reason-other" name="reason" value="outro">
+                                <label for="reason-other">Outro motivo</label>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="btn btn-primary btn-full-width">Quero uma demonstração</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Perguntas Frequentes</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-question">
+                            <span>O sistema GesCond é seguro?</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. A segurança é nossa prioridade máxima. Utilizamos criptografia de ponta, servidores seguros e backups diários para garantir que todos os dados do seu condomínio estejam sempre protegidos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-question">
+                            <span>Existe algum período de teste gratuito?</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos uma demonstração guiada e gratuita, onde nossa equipe apresentará todas as funcionalidades do sistema e tirará suas dúvidas. Entre em contato para agendar a sua!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-question">
+                           <span>A implantação do sistema é complicada?</span>
+                           <span class="material-icons">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                           <p>Não! Nossa equipe de especialistas cuidará de todo o processo de cadastro inicial do seu condomínio e das unidades. Além disso, oferecemos treinamento completo para o síndico e a equipe administrativa para garantir que todos aproveitem o máximo do GesCond desde o primeiro dia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contato" class="final-cta-section">
+            <div class="container" data-aos="zoom-in">
+                <h2>Pronto para revolucionar a gestão do seu condomínio?</h2>
+                <p>Agende uma demonstração gratuita ou fale conosco agora mesmo pelo WhatsApp.</p>
+                    <div class="cta-buttons-container">
+                        <a href="https://wa.me/5571993570954?text=Ol%C3%A1!%20Tenho%20interesse%20no%20sistema%20GesCond%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn-whatsapp btn-large" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="fill: white; margin-right: 8px;"><path d="M16.75 13.96C17.01 14.28 17.13 14.64 17.13 15.05C17.13 15.89 16.48 16.54 15.65 16.56C15.53 16.56 15.39 16.54 15.26 16.51C14.6 16.36 13.29 15.93 12.03 14.83C10.53 13.47 9.42 11.83 9.22 11.54C9.02 11.25 8.37 10.33 8.37 9.53C8.37 8.73 8.71 8.39 8.97 8.12C9.23 7.85 9.54 7.79 9.8 7.79C10.03 7.79 10.21 7.82 10.36 7.85C10.58 7.91 10.73 8.24 10.86 8.48C11.02 8.78 11.16 9.16 11.21 9.3C11.28 9.5 11.25 9.72 11.13 9.91L10.59 10.5C10.49 10.6 10.42 10.72 10.42 10.86C10.42 11 10.48 11.14 10.61 11.28C10.82 11.5 11.01 11.7 11.21 11.91C11.95 12.65 12.83 13.39 13.84 13.87C14.02 13.96 14.19 14.01 14.36 14.01C14.53 14.01 14.68 13.94 14.8 13.82L15.3 13.27C15.53 13.01 15.82 12.95 16.07 13.01C16.21 13.05 16.63 13.21 16.96 13.38C17.22 13.51 17.43 13.62 17.49 13.72C17.58 13.82 17.29 13.57 16.75 13.96ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <span>Conversar no WhatsApp</span>
+                        </a>
+                        <a href="mailto:contato@gescond.com.br?subject=Solicitação de Demonstração GesCond" class="btn btn-primary btn-large">
+                        <span class="material-icons">email</span>
+                        <span>Fale com um especialista</span>
+                        </a>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="images/gescond-logo.png" alt="GesCond Logo" class="footer-logo">
+                <p>GesCond &copy; 2025. Simplificando a vida em condomínio.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><svg>...</svg></a> <a href="#" title="Instagram"><svg>...</svg></a> <a href="#" title="LinkedIn"><svg>...</svg></a> </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, 
+            once: true, 
+        });
+    </script>
+    
+    <script src="js/script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <a href="https://wa.me/5571993570954?text=Ol%C3%A1!%20Tenho%20interesse%20no%20sistema%20GesCond%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-fab" target="_blank" title="Fale conosco pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.48 3.44 1.35 4.92L2.06 22l5.26-1.41c1.43.82 3.04 1.3 4.72 1.3h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.67-1.08-5.16-2.86-6.94S14.71 2 12.04 2zm4.83 12.3c-.14.42-1.03 1.03-1.42 1.03-.39 0-.82-.12-.96-.21-.49-.29-1.57-1-2.9-2.26-1.5-1.42-2.43-2.8-2.68-3.14-.25-.34-.52-1.04-.52-1.53 0-.49.31-.74.52-.96.21-.22.46-.29.63-.29.17 0 .34 0 .49.01.21.01.36.03.53.39.17.36.58.97.63 1.06.05.09.08.21.03.34-.05.13-.17.31-.31.44-.14.13-.26.26-.41.41-.15.15-.29.31-.13.58.16.27.74 1.12 1.57 1.87.97.87 1.73 1.15 2.01 1.28.28.13.46.1.63-.08.17-.18.74-.88.94-1.18.2-.3.4-.36.68-.22.28.14.97.68 1.15.78.18.1.3.15.41.22.11.07.11.45-.03.87z"/>
+    </svg>
+    </a>
+
+</body>
+</html>
+</body>
+</html>
